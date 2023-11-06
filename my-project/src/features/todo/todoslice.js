@@ -20,6 +20,8 @@ export const todoSlice=createSlice({
             state.todos=state.todos.filter((todo)=>
             todo.id!==action.payload)
         }
+
+        
     }
 })
 
