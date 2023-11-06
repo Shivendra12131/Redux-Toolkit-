@@ -1,4 +1,4 @@
-import { CreateSlice,nanoid } from "@reduxjs/toolkit";
+import { createSlice,nanoid } from "@reduxjs/toolkit";
 
 const initialState={
     todos:[],
@@ -21,10 +21,14 @@ export const todoSlice=createSlice({
             todo.id!==action.payload)
         }
 
-        
+
     }
 })
 
 export const {addTodo,removeTodo}=todoSlice.actions
+// jitni functionalities hai usko export kar loo
+
+
+//sare ke sare reducer ka list chaiye ise
 
 export default todoSlice.reducer
